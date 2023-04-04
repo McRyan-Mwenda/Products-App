@@ -1,0 +1,94 @@
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.about-us-parent{
+    max-width: 1000px;
+    width: 70%;
+}
+
+.about-us-card{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0px 20px -2px #1f2235;
+}
+
+.about-us-profile{
+    width: 50%;
+    background-image: url('../../Assets/AboutUs/nathan-dumlao-pMW4jzELQCw-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-us-details{
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+}
+
+.about-us-description{
+    font-size: 12px;
+
+}
+
+.about-us-highlights{
+    margin: 80px 0;
+}
+
+.highlight-heading{
+    font-family: "Poppins Bold";
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.highlight{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.highlight-blob{
+    height: 10px;
+    width: 10px;
+    margin: 0 10px 0 0;
+    background-color: #ff5823;
+    border-radius: 50px;
+}
+
+.about-us-options .highlighted-btn{
+    margin: 0 0 0 30px;
+}
+
+@media screen and (max-width: 1110px){
+    .about-us-parent{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 898px){
+    .about-us-profile{
+        display: none;
+    }
+    .about-us-details{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 466px){
+    .about-us-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us-options .highlighted-btn{
+        margin: 24px 0 0 0 !important;
+    }
+    .about-us-options button{
+        width: 100%;
+    }
+}
